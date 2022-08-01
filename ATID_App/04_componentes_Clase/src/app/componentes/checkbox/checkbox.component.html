@@ -1,0 +1,8 @@
+<br>
+<h1>Lista</h1>
+<ion-list>
+  <ion-item *ngFor="let entry of form">
+    <ion-label>{{entry.val}}</ion-label>
+    <ion-checkbox slot="end" [(ngModel)]="entry.isChecked" color="success"></ion-checkbox>
+  </ion-item>
+</ion-list>
